@@ -1,0 +1,9 @@
+.nav {
+  color: #87cefa;
+  padding: 20px;
+}
+.title {
+  width: 100px;
+  object-fit: contain;
+  left: 20px;
+}

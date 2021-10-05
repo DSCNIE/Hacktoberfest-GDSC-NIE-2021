@@ -1,0 +1,35 @@
+body {
+  font: sans-serif;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  top: 15%;
+  background: linear-gradient(to right, red, yellow);
+  background-position: fixed;
+}
+
+h1 {
+  font: san-serif;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  font-size: xx-large;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  width: 100%;
+}
+
+h2 {
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+h3 {
+  font: sans-serif;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  text-transform: none;
+  font-weight: bolder;
+  font-size: x-large;
+  letter-spacing: 0.01em;
+}

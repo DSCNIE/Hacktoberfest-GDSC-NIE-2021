@@ -1,0 +1,30 @@
+.App{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  color: black;
+}
+
+body,
+html,
+#root{
+  height: 100%;
+  color: black;
+}
+.todo-form{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+li{
+  text-align: initial;
+  font-size: 30px;
+}
+label{
+  color: black;
+  font-weight: bolder;
+}

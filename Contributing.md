@@ -42,12 +42,6 @@ mkdir <your_name>
 cd <your_name>
 ```
 
-##### if you are participating for flask compeitition make your folder like below
-```bash
-mkdir <your_name> (Flask)
-cd <your_name> (FLask)
-```
-
 ### Put the programs in your directory
 > Note: Put your programs inside the directory of your name only. Try and keep one pull request per program you add. You can have a look
 > at the example programs already added

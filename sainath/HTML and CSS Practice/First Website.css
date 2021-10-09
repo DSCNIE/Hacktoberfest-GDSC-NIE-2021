@@ -1,0 +1,62 @@
+.main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(Pic.jpg);
+  width: 2500px;
+  height: 675px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+  float: left;
+  margin-top: 30px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  transition: 0.5s ease;
+}
+
+ul li a:hover {
+  background-color: black;
+  color: white;
+}
+
+.logo img {
+  float: right;
+  width: 150px;
+  height: auto;
+}
+
+.main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title h1 {
+  color: sandybrown;
+  font-size: 50px;
+  border: 2px solid transparent;
+  transition: 0.5s ease;
+}
+
+.title ul li a h1:hover {
+  background-color: black;
+  color: white;
+}

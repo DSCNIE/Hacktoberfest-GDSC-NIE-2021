@@ -1,0 +1,9 @@
+import random
+LOWER="abcdefghijklmnopqrstuvwxyz"
+UPPER="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+NUMBERS="0123456789"
+SYMBOLS="[]{}()*;/_-"
+ALL=LOWER+UPPER+NUMBERS+SYMBOLS
+LENGTH=16
+PASSWORD="".join(random.sample(ALL,LENGTH))
+print(PASSWORD)

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Random User Generator</title>
+</head>
+<body>
+    <div id="app">
+        <img :class="true?'gender':'male'" v-bind:src="picture" :alt="`${firstName} ${lastName}`" /> <!--it is not necessary to write "v-bind", the code will also work with just the colon sign-->
+        <h1>Hello {{firstName}} {{lastName}}</h1>
+        <h3>Email: {{email}}</h3>
+        <button @click="getUser()" :class="gender">Get Random User</button>
+    </div>  
+    <!-- all the code and the UI is put into this div called app-->
+
+    <script src="https://unpkg.com/vue@3.0.5"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
+
+<!-- just type scri... and then select the "script:src" option -->
+<!-- if u write "#app", then select the option, then u will get the full dev bracket -->

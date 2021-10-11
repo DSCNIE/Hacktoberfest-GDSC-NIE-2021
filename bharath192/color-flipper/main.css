@@ -1,0 +1,148 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap');
+
+body {
+    background: #f8fafc;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    line-height: 1.75rem;
+    color: #0f172a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  /* margin-bottom: 1.38rem; */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 2.441rem;
+  }
+
+h4 {
+    font-size: 1.563rem;
+  }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav {
+    background: white;
+    height: 4rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;    
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.nav-center {
+    width: 90vw;
+    /* background: red; */
+    max-width: 600px;
+    margin: 0 auto;
+    /* this means that 0 margin at top and bottom, auto bottom at left and right */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* justify-content: space-around; */
+}
+
+.nav-center h4 {
+    margin: auto;
+    text-transform: capitalize;
+    /* margin-bottom: 0; */
+    color: #645cff;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+nav a {
+    text-transform: capitalize;
+    font-size: 1rem;
+    color: #141233;
+    letter-spacing: 1px;
+    margin-right: 1rem;
+    transition: 0.3s ease-in-out all;
+
+}
+
+nav a:hover {
+    color: #645cff;
+}
+
+main {
+    min-height: calc(100vh - 4rem);
+    display: grid; 
+    place-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h2 {
+    background: black;
+    color: white;
+    padding: 1.25rem;
+    font-size: 210%;
+    border-radius: 0.5rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+
+.color {
+    color: #645cff;
+    text-transform: uppercase;
+}
+
+.btn-hero {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    background: transparent;
+    color: black;
+    letter-spacing: 0.25rem;
+    font-weight: 500;
+    border: 2px solid black;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.25rem;
+    cursor: grabbing;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+}
+
+.btn-hero:hover {
+    color: white;
+    background: black;
+}
+
+@media screen and (min-width: 600px){
+    h2 {
+        font-size: 2.5rem;
+        line-height: 1rem;
+    }
+    body {
+        font-size: 1rem;
+    }
+    
+}

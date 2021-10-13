@@ -1,4 +1,4 @@
-package sidharthagrwl;
+package sidharthagrwl.NewClass;
 import java.util.*;
 
 public class NewClass {

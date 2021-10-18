@@ -1,7 +1,7 @@
-# Hacktoberfest 2021 - GDSC NIE
 
-
-![banner](https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg)
+<p align="center">
+  <img src="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg" width="700px">
+</p>
 
 
 ## Hello NIE <img src="https://raw.githubusercontent.com/arnoob16/arnoob16/master/wave.gif" width="30px">

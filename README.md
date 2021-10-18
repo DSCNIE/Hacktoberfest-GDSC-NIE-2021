@@ -1,5 +1,9 @@
 # Hacktoberfest 2021 - GDSC NIE
 
+
+![banner](https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg)
+
+
 ## Hello NIE <img src="https://raw.githubusercontent.com/arnoob16/arnoob16/master/wave.gif" width="30px">
 
 It's that time of the year again. Hacktoberfest 2021 is here. Support Open Source and win a free t-shirt 😁

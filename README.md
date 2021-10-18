@@ -1,3 +1,5 @@
+![logo](https://user-images.githubusercontent.com/21104335/137709123-9c326ca9-597e-4096-89cf-516835473911.png)
+
 # Hacktoberfest 2021 - GDSC NIE
 
 ## Hello NIE <img src="https://raw.githubusercontent.com/arnoob16/arnoob16/master/wave.gif" width="30px">

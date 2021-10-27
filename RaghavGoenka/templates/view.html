@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/des1.css') }}">
+</head>
+
+<body  >
+
+ 
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<h1 id="first">Enter quote type </h1>
+<form method="POST">
+	{{form.hidden_tag()}}
+	{{form.quote.label}}
+	{{form.quote}}
+	<br>
+	
+	<div id="submit">{{form.submit()}}</div>
+</form>
+
+
+<h1 id="first">Quotes of the Day</h1>
+<center>
+
+
+<div id="cardx">
+	{% for i in range(26) %}
+<div class="card" >
+	
+  <div class="card-body">
+    <h5 class="card-title">Quote</h5>
+   
+    
+
+    <p class="card-text">{{quote_list[i]}}</p>
+ 	 
+    <a href="https://en.wikipedia.org/wiki/{{author_list[i]}}" class="card-link" >{{author_list[i]}}</a>
+	
+  </div>
+ 
+</div>
+{% endfor %}
+ 
+</div>
+</center>
+</body>
+
+</html> 

@@ -1,0 +1,60 @@
+
+body{
+	background-color: #dea700;
+background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+}
+
+.card{
+	vertical-align: middle;
+	
+	margin-top:250px;
+	border-radius: 10px;
+	width: 35rem; 
+	height: 25rem;
+	box-shadow:8px 8px rgba(100,100,0,0.3);
+	background-color: #9ae019;
+	opacity: 0.6;
+	background-image: url("https://www.transparenttextures.com/patterns/black-paper.png");
+	font-size: 10px;
+
+}
+#first {
+	padding-top: 100px;
+	color: green;
+	font-style: italic;
+	font-family: oxygen;
+	font-size:bold;
+	text-decoration: underline;
+	text-align: center;
+}
+.card-title{
+	font-size: 35px;
+	font-style: bold;
+	color: #3333FF;
+	font-family: "Lucida Console", Courier, monospace;
+	
+	background-color: yellow;
+	display: inline;
+	
+
+
+
+}
+.card-text
+{	
+	padding-top: 50px;
+	font-size: 25px;
+	text-align: center;
+	
+}
+.card-link{
+
+	
+	margin-top: 20px;
+	font-size: 30px;
+	text-decoration: underline;
+	text-align: center;
+}
+form {
+	text-align: center;
+}

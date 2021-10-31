@@ -1,0 +1,15 @@
+#clock{
+    font-size:  110px;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 56%;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 250px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: linear-gradient(to right,red ,yellow);
+}
+
+body{
+    background-image: linear-gradient(to left, red, yellow);
+}

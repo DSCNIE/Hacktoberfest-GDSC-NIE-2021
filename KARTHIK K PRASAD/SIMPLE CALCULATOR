@@ -1,0 +1,16 @@
+print('SIMPLE CALCULATOR FOR TWO NUMBERS')
+X=int(input('ENTER THE FIRST NUMBER='))
+Y=int(input('ENTER THE SECOND NUMBER='))
+a=str(input('ENTER THE OPERATION TO BE DONE (USE + - * / ) ='))
+if Y == 0 and a=='/':
+    print('NOT DEFINED')
+else:
+    if a=='+':
+        print(X+Y)
+    if a=='-':
+        print(X-Y)
+    if a=='*':
+        print(X*Y)
+    if a=='/':
+        print(X/Y)
+    

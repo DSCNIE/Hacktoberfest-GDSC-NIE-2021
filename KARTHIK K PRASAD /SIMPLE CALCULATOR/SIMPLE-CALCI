@@ -1,0 +1,15 @@
+print("SIMPLE CALCULATOR FOR TWO NUMBERS")
+X=int(input('ENTER THE FIRST VALUE = '))
+Y=int(input('ENTER THE SECOND VALUE = '))
+z=str(input('Enter the operation to be done (use symbols + - * /) ='))
+if Y== 0 and z== '/':
+    print('INDEFNITE')
+else:
+    if z=='+':
+        print(X+Y)
+    if z=='-':
+        print(X-Y)
+    if z=='*':
+        print(X*Y)
+    if z=='/':
+        print(X/Y)

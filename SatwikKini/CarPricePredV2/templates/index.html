@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/App.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+    <title>Car Price Predictor</title>
+  </head>
+  <body style="background-color: black;">
+    <nav class="navbar navbar-expand-lg" style="background-color: black;" id="navbar_main" >
+      <div class="container-fluid">
+          <a class="navbar-brand" href="/" style="color: white;" >Car Price Predictor</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/" style="color: white;">Home</a>
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="dropdown" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                  Vehicle Type
+              </a>
+              <ul class="dropdown-menu" style="background-color: black;">
+                  <li><a class="dropdown-item" href="/" style="color: white;">Four Wheeler</a></li>
+                  <li><a class="dropdown-item" href="/" style="color: white;">Two Wheeler</a></li>
+              </ul>
+              </li>
+          </ul>
+          </div>
+      </div>
+  </nav>
+  <img src="static/car.jpeg" class="center" height="220px">
+
+  
+</div>
+    
+      <form method="post" action="#" accept-charset="utf-8" id="formBox">
+        <div class="col-5 form group" style="text-align: center;" id="predict-button">
+          <button class="btn btn-info form-control" onclick="send_data()">Predict Price</button>
+          </div>
+          <div class="row">
+            <div class="col-12" style="text-align: center;">
+                <h3>
+                    <span id="prediction"></span>
+                </h3>
+            </div>
+          </div>
+          <div class="card-body">
+
+          
+
+          <div class="col-5 form group" style="text-align: left;" id="selBox">
+                <label><b>Select Car Model </b></label>
+                <select class="selectpicker form-control" id="model" name="model" required="1"> 
+                  {% for model in models %}
+                    <option value="{{ model }}">{{ model }}</option>    
+                  {% endfor %}
+                </select>
+            </div>
+            <div class="col-5 form group" style="text-align: left;" id="selBox">
+                <label><b>Year Of Purchase </b></label>
+                <select class="selectpicker form-control" id="year" name="year" required="1" aria-placeholder="Hello">
+                  {% for y in year %}
+                    <option value="{{ y }}">{{ y }}</option>    
+                  {% endfor %}
+                </select>
+            </div>
+            <div class="col-5 form group" style="text-align: left;" id="selBox">
+                <label><b>Fuel Type </b></label>
+                <select class="selectpicker form-control" id="fuel" name="fuel" required="1">
+                  {% for fuel in fueltypes %}
+                    <option value="{{ fuel }}">{{ fuel }}</option>    
+                  {% endfor %}
+                </select>
+            </div>
+            <div class="col-5 form group" style="text-align: left;" id="selBox">
+                <label><b>Owner Type </b></label>
+                <select class="selectpicker form-control" id="own" name="own" required="1">
+                  {% for own in ownertypes %}
+                    <option value="{{ own }}">{{ own }}</option>    
+                  {% endfor %}
+                </select>
+            </div>
+            <div class="col-5 form group" style="text-align: left;" id="selBox">
+                <label><b>Enter the Number of Kilometers Travelled </b></label>
+                <input value="12345" onclick="getSelection(Selection)" class="form-control" type="text" id="kilo" name="kilo" placeholder="Eg: 15234" required="1">
+            </div>
+          </div>
+      </form>
+        
+        
+
+    <noscript></noscript>
+    <div id="root"></div>
+
+    <script>
+
+    function form_handler(event){
+                event.preventDefault();
+    }
+
+      function send_data(){
+                  document.querySelector('form').addEventListener('submit',form_handler);
+                  var fd = new FormData(document.querySelector('form'));
+
+                  var xhr = new XMLHttpRequest();
+
+                  xhr.open('POST', '/predict', true);
+                  document.getElementById("prediction").innerHTML="Wait we are predicting the price...";
+
+                  xhr.onreadystatechange= function(){
+                      if(xhr.readyState == XMLHttpRequest.DONE){
+                          document.getElementById("prediction").innerHTML="Prediction = "+ xhr.responseText;
+                      }
+                  }
+
+                  xhr.onload=function(){};
+                  xhr.send(fd);
+
+              }
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

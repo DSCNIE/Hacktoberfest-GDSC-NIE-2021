@@ -1,0 +1,78 @@
+@font-face {
+  font-family: tangerine;
+  src: url(/Users/satwik/Documents/Coding/MachineLearningPractice/CarPriceWebsite/Tangerine-Regular.ttf);
+}
+@font-face {
+  font-family: Courier Prime, monospace;
+  src: url(/Users/satwik/Documents/Coding/MachineLearningPractice/CarPriceWebsite/CourierPrime-Regular.ttf);
+}
+
+.navbar-brand{
+  font-family: tangerine;
+  font-size: 2.8rem;
+  font-weight: 400;
+  /* color: white; */
+}
+
+.dropdown{
+  font-weight: 600;
+  color: white;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#navbar_main{
+  border-bottom: .01rem solid cyan;
+}
+
+.card-body{
+  font-family: monospace;
+  color: cyan;
+  margin: 10px 60px;
+}
+
+#predict-button{
+  float: right;
+  padding: 30px 10px;
+  margin: 20px 60px;
+}
+
+#selBox{
+  margin: 20px 10px;
+}
+
+#model{
+  background-color: black;
+  color: white;
+}
+#own{
+  background-color: black;
+  color: white;
+}
+#year{
+  background-color: black;
+  color: white;
+}
+#fuel{
+  background-color: black;
+  color: white;
+}
+#kilo{
+  background-color: black;
+  color: white;
+}
+
+.row{
+  float: right;
+  padding: 80px 20px;
+  margin: 10px 30px;
+  width: 46%;
+  background-color: black;
+  color: aqua;
+  font-weight: 500;
+}
